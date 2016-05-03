@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "4S72FXVAJJ.com.test.unilink",
+                "paths": [ "*" ]
+            }
+        ]
+    }
+}
