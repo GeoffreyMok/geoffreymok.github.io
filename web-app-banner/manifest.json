@@ -1,6 +1,12 @@
 {
   "name": "TEST APP INSTALL BANNER",
   "short_name": "TEST APP INSTALL BANNER",
+  "icons": [
+    {
+      "src": "Untitled.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
   "prefer_related_applications": true,
   "related_applications": [
     {

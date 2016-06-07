@@ -8,6 +8,23 @@
 		<meta property="og:image:height" content="175" />
 		<meta name="apple-itunes-app" content="app-id=1084759836, app-argument=yulioviewer://vre_slug=xNGwoAy2cr">
 		<link rel="apple-touch-icon" href="http://cdn.appshopper.com/icons/108/4759836_larger.png">
+		    <script> 
+    window.addEventListener('load', function() {
+      var outputElement = document.getElementById('output');
+      navigator.serviceWorker.register('service-worker.js', { scope: './' })
+        .then(function(r) {
+          console.log('registered service worker');
+        })
+        .catch(function(whut) {
+          console.error('uh oh... ');
+          console.error(whut);
+        });
+       
+      window.addEventListener('beforeinstallprompt', function(e) {
+        outputElement.textContent = 'beforeinstallprompt Event fired';
+      });
+    });
+    </script>
 	</head>
 	<body>
 		<!-- <h3>www.yulio.com/app-vre/</h3> -->
