@@ -1,0 +1,13 @@
+{
+  "name": "TEST APP INSTALL BANNER",
+  "short_name": "TEST APP INSTALL BANNER",
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.Yulio.YulioViewerCB"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone"
+}
