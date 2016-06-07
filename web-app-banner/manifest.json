@@ -2,7 +2,7 @@
 	"name": "TEST APP INSTALL BANNER",
 	"short_name": "TEST APP INSTALL BANNER",
 	"icons": [{
-		"src": "Untitled.png",
+		"src": "./Untitled.png",
 		"sizes": "144x144",
 		"type": "image/png"
 	}],

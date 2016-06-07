@@ -7,8 +7,7 @@
 		<meta property="og:image:width" content="175" />
 		<meta property="og:image:height" content="175" />
 		<meta name="apple-itunes-app" content="app-id=1084759836, app-argument=yulioviewer://vre_slug=xNGwoAy2cr">
-		<link rel="apple-touch-icon" href="http://cdn.appshopper.com/icons/108/4759836_larger.png">
-		<link rel="manifest" href="manifest.json">
+		<link rel="manifest" href="./manifest.json">
 	</head>
 	<body>
 		<!-- <h3>www.yulio.com/app-vre/</h3> -->
@@ -50,6 +49,9 @@
 		<script> 
 		  window.addEventListener('load', function() {
 	  
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('service-worker.js');
+			}
 			var outputElement = document.getElementById('output');
 				   
 			window.addEventListener('beforeinstallprompt', function(e) {
