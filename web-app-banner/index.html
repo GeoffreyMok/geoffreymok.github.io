@@ -9,23 +9,6 @@
 		<meta name="apple-itunes-app" content="app-id=1084759836, app-argument=yulioviewer://vre_slug=xNGwoAy2cr">
 		<link rel="apple-touch-icon" href="http://cdn.appshopper.com/icons/108/4759836_larger.png">
 		<link rel="manifest" href="manifest.json">
-		<script> 
-    window.addEventListener('load', function() {
-      var outputElement = document.getElementById('output');
-      navigator.serviceWorker.register('service-worker.js', { scope: './' })
-        .then(function(r) {
-          console.log('registered service worker');
-        })
-        .catch(function(whut) {
-          console.error('uh oh... ');
-          console.error(whut);
-        });
-       
-      window.addEventListener('beforeinstallprompt', function(e) {
-        outputElement.textContent = 'beforeinstallprompt Event fired';
-      });
-    });
-    </script>
 	</head>
 	<body>
 		<!-- <h3>www.yulio.com/app-vre/</h3> -->
@@ -64,6 +47,16 @@
 		<br/>
 		<a href="https://itunes.apple.com/us/app/yulio-viewer/id1084759836?mt=8">iOS App Store</a>
 		<br/>
+		<script> 
+		  window.addEventListener('load', function() {
+	  
+			var outputElement = document.getElementById('output');
+				   
+			window.addEventListener('beforeinstallprompt', function(e) {
+			  outputElement.textContent = 'beforeinstallprompt Event fired';
+			});
+		  });
+		</script>
 	</body>
 </html>
 
