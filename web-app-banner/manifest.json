@@ -3,7 +3,7 @@
 	"short_name": "TEST APP INSTALL BANNER",
 	"icons": [{
 		"src": "Untitled.png",
-		"sizes": "256x256",
+		"sizes": "144x144",
 		"type": "image/png"
 	}],
 	"start_url": "./index.html",
